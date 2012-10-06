@@ -34,4 +34,8 @@ Monolithic::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # For Devise
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.assets.initialize_on_precompile = false
 end
